@@ -1,0 +1,17 @@
+.modal-header {
+    padding-bottom: 0px !important;
+}
+
+.modal-header .close {
+    margin-top: -36px !important;
+}
+
+@media (min-width: 768px){
+.navbar-nav>li>a {
+    padding-top: 23px !important;
+}
+}
+
+.iconfont{
+    font-size: 20px !important;
+}
