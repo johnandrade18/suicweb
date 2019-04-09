@@ -107,7 +107,7 @@
         <div class="modal-content">
             <form role="form" method="post" enctype="multipart/form-data">
                 <div class="modal-header bg-primary">
-                    <h3 class="modal-title" id="exampleModalLabel">Agregar Usuario</h3>
+                    <h3 class="modal-title" id="exampleModalLabel" style="padding-bottom: 10px;">Agregar Usuario</h3>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true"><span class="icon-times"></span></span>
                       </button>
@@ -119,19 +119,19 @@
                           <div class="form-group col-md-6">
                               <label for="TipoDocumento">Tipo de Documento</label>
                                 <select id="TipoDocumento" class="form-control">
-                                    <option selected></option>
+                                    <option selected>Ninguno</option>
                                     <option>...</option>
                                 </select>
                               </div>
                               <!-- Numero documento -->
                               <div class="form-group col-md-6">
                                   <label for="numeroDocumento">Numero de Documento</label>
-                                    <input type="text" class="form-control" id="numeroDocumento" required>
+                                    <input type="text" class="form-control" id="numeroDocumento"  required>
                               </div>
                               <!-- Primer Nombre -->
                               <div class="form-group col-md-6">
                                   <label for="primerNombre">Primer Nombre</label>
-                                    <input type="text" class="form-control" id="primerNombre" required>
+                                    <input type="text" class="form-control" id="primerNombre" placeholder="" required>
                               </div>
                               <!-- Segundo Nombre -->
                               <div class="form-group col-md-6">
@@ -166,12 +166,12 @@
                             <!-- Email -->
                             <div class="form-group col-md-6">
                                   <label for="email">Email</label>
-                                  <input type="email" class="form-control" id="email" placeholder="E mail" required>
+                                  <input type="email" class="form-control" id="email" required>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="sexo">Sexo</label>
                                   <select id="sexo" class="form-control" required>
-                                      <option selected></option>
+                                      <option selected>Ninguno</option>
                                       <option>...</option>
                                   </select>
                             </div>
