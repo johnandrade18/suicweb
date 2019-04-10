@@ -87,7 +87,7 @@
                               <!-- Descripcion -->
                               <div class="form-group col-md-6">
                                   <label for="descripcion">Descripcion</label>
-                                    <textarea type="text" class="form-control" id="descripcion" required></textarea>
+                                    <input type="text" class="form-control" id="descripcion" required>
                               </div>
                        </div>
                   </div>
