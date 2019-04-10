@@ -28,33 +28,43 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-              </tr> 
-              <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-              </tr>              
+            <?php 
+
+              $item = null;
+              $valor = null;
+              $roles = ControllerRol::ctrMostrarRol($item, $valor);
+
+              foreach ($roles as $key => $value) {
+                echo '<tr>
+                <td>'.$value["id_rol"].'</td>
+                <td>'.$value["nombre"].'</td>
+                <td>'.$value["descripcion"].'</td>';
+                if($value["condicion"] != 0){
+
+                    echo '<td><button class="btn btn-success btn-xs btnActivar" idUsuario="'.$value["id_rol"].'" estadoUsuario="0">Activado</button></td>';
+
+                  }else{
+
+                    echo '<td><button class="btn btn-danger btn-xs btnActivar" idUsuario="'.$value["id_rol"].'" estadoUsuario="1">Desactivado</button></td>';
+
+                  }             
+                echo'<td>'.$value["create_at"].'</td>
+                <td>'.$value["update_at"].'</td>
+                <td>                    
+
+                    <div class="btn-group">
+                        
+                        <button class="btn btn-warning btnEditarRol" style="margin-right: 5px" idRol="'.$value["id_rol"].'" data-toggle="modal" data-target="#modalEditarRol"><i class="fa fa-pencil"></i></button>
+
+                        <button class="btn btn-danger btnEliminarRol" style="margin-left: 5px" idRol="'.$value["id_rol"].'"><i class="fa fa-times"></i></button>
+
+                    </div>  
+                    </td>
+              </tr>';
+                
+              }
+
+             ?>  
             </tbody>
           </table>
         </div>
@@ -82,12 +92,12 @@
                               <!-- Rol -->
                               <div class="form-group col-md-6">
                                   <label for="rol">Rol</label>
-                                    <input type="text" class="form-control" id="rol" required>
+                                    <input type="text" class="form-control" id="rol" name="rol" required>
                               </div>
                               <!-- Descripcion -->
                               <div class="form-group col-md-6">
                                   <label for="descripcion">Descripcion</label>
-                                    <input type="text" class="form-control" id="descripcion" required>
+                                    <input type="text" class="form-control" id="descripcion" name="descripcion" required>
                               </div>
                        </div>
                   </div>
