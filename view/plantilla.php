@@ -74,6 +74,7 @@ session_start()
 
 <!-- Sweetalert 2 -->
   <script src="view/plugins/sweetalert2/sweetalert2.all.js"></script>
+  
 
    
   <!--=====  End of plugin de javascript   ====== -->
@@ -187,6 +188,7 @@ echo '</div>';
 ?>
 
 
-<script src="view/js/plantilla.js"></script> 
+<script src="view/js/plantilla.js"></script>
+<script src="view/js/rol.js"></script>
 </body>
 </html>
