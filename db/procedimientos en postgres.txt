@@ -1,0 +1,22 @@
+Ruta en cmd
+
+C:\Program Files\PostgreSQL\11\bin
+
+Comando a ejecutar para hacer backups en postgres
+pg_dump -U postgres -v -F c suicweb > E:\dbsuicweb\suicweb_backup.sql
+pg_dump -U postgres -v -F c suicweb > E:\dbsuicweb\suicweb_backup.dump
+
+
+Ruta en cmd
+
+C:\Program Files\PostgreSQL\11\bin
+
+Comando a ejecutar para hacer restauracion de la db en postgres
+pg_restore -U postgres -v -d suicweb > E:\dbsuicweb\suicweb_backup.sql
+pg_restore -U postgres -v -d suicweb > E:\dbsuicweb\suicweb_backup.dump
+
+comando para entrar a la base de datos por comando
+psql -h localhost -U postgres -d suicweb
+
+
+antes de hacer estos paso hay que crear la base de datos con el nombre suicweb para poder hacer una restauracion 
