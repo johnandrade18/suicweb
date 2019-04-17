@@ -15,7 +15,26 @@ session_start()
   <link rel="icon" href="view/img/plantilla/logo-sm.png" >
 
   <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="canonical" href="http://suicweb.com">
+  <meta name="author" content="John Alexander Andrade Diaz">
+  <link rel="manifest" href="">
+  <meta name="description" content="Sistema de flota y recaudo">
+  <meta name="keywords" content="john, andrade, sistema, flota, recaudo, vehiculos, gps, unico, informacion,consolidada,suic, suicweb, boostrap, html5, css3, js, desarrollador, sistemas">
+  <meta name="twitter:card" content="summary_larga_image">
+  <meta name="twitter:site" content="@johnandrade18">
+  <meta name="twitter:creater" content="@johnandrade18">
+  <meta name="twitter:title" content="Sistema unico de informacion consolida">
+  <meta name="description" content="Sistema de flota y recaudo">
+  <meta name="twitter:image" content="logo-sm.png">
+  <meta name="og:locale" content="es_CO">
+  <meta name="og:type" content="website">
+  <meta name="og:title" content="Sistema unico de informacion consolida">
+  <meta name="og:description" content="Sistema de flota y recaudo">
+  <meta name="og:url" content="http://suicweb.com">
+  <meta name="og:site_name" content="http://suicweb.com">
+  <meta name="og:image" content="logo-sm.png">
+
 
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="view/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -190,5 +209,6 @@ echo '</div>';
 
 <script src="view/js/plantilla.js"></script>
 <script src="view/js/rol.js"></script>
+<script src="view/js/sexo.js"></script>
 </body>
 </html>
